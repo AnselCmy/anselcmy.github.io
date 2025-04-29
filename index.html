@@ -150,11 +150,20 @@
         }
 
         .publication {
-            margin-bottom: 15px;
-            /* padding: 6px px; */
+            margin-bottom: 12px;  /* 从20px减少到12px */
+            padding: 12px;  /* 从15px减少到12px */
             background-color: #ffffff;
             position: relative;
             overflow: hidden;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .publication:hover {
+            border-color: #e0e0e0;  /* hover时边框变深 */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);  /* hover时添加轻微阴影 */
+            transform: translateY(-1px);  /* hover时轻微上浮 */
         }
 
         .publication-title {
@@ -163,14 +172,14 @@
             hyphens: auto;
             font-weight: 500;
             font-size: 0.9em;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             color: #000000;
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         .publication-authors {
             color: #666666;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             font-size: 0.8em;
         }
 
@@ -217,7 +226,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-top: 10px;
+            margin-top: 6px;
         }
 
         .publication-links {
@@ -344,6 +353,9 @@
                 <a href="https://github.com/AnselCmy" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
+                <a href="https://x.com/chen_mingyang" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
             </div>
         </div>
 
@@ -367,6 +379,17 @@
             <section id="publications">
                 <h2>Selected Publications</h2>
                 <p style="font-size: 0.8em; color: #666666; margin: -5px 0 15px 0;">For a complete list of publications, please refer to my <a href="https://scholar.google.com/citations?user=ofNVwaQAAAAJ&hl=en" style="color: #666666;">Google Scholar</a> profile.</p>
+                <div class="publication">
+                    <div class="publication-title">ReSearch: Learning to Reason with Search for LLMs via Reinforcement Learning</div>
+                    <div class="publication-authors"><strong>Mingyang Chen</strong>, Tianpeng Li, Haoze Sun, Yijie Zhou, Chenzheng Zhu, Haofen Wang, Jeff Z. Pan, Wen Zhang, Huajun Chen, Fan Yang, Zenan Zhou, Weipeng Chen</div>
+                    <div class="publication-meta">
+                        <div class="publication-venue">arXiv 2025</div>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2503.19470">Paper</a>
+                            <a href="https://github.com/Agent-RL/ReCall?tab=readme-ov-file">Code</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="publication">
                     <div class="publication-title">Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning</div>
                     <div class="publication-authors"><strong>Mingyang Chen</strong>, Haoze Sun, Tianpeng Li, Fan Yang, Hao Liang, Keer Lu, Bin Cui, Wentao Zhang, Zenan Zhou, Weipeng Chen</div>
